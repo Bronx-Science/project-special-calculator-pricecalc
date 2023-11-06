@@ -113,6 +113,7 @@ class _CalculatorViewState extends State<CalculatorView> {
                               controller: priceEditingController,
                               keyboardType: TextInputType.number,
                               inputFormatters: <TextInputFormatter>[
+                                //this is how text field is able to change dynamically as user inputs values
                                 FilteringTextInputFormatter.digitsOnly,
                                 LengthLimitingTextInputFormatter(12),
                                 CurrencyTextInputFormatter(
